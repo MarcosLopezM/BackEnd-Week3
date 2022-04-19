@@ -7,7 +7,7 @@ describe("Unit Tests for Spider-Man Class", () => {
 
         // Validating code
         expect(tobeySpiderMan.name).toBe("First Spider-Man")
-        expect(tobeySpiderMan.age).toBe(25)
+        expect(tobeySpiderMan.age).toBe(47)
         expect(tobeySpiderMan.actor).toBe("Tobey Maguire")
         expect(tobeySpiderMan.numberOfMovies).toBe(3)
         expect(tobeySpiderMan.studio).toBe("Marvel Enterprises")
