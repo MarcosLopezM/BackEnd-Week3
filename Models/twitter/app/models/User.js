@@ -4,8 +4,9 @@ class User {
         this.username = username,
         this.name = name,
         this.bio = bio,
-        this.dateCreated = dateCreated,
-        this.lastUpdated = lastUpdated
+        // Values assigned when object is instantiated
+        this.dateCreated = new Date(),
+        this.lastUpdated = new Date()
     }
 }
 
