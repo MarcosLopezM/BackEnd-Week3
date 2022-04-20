@@ -1,0 +1,17 @@
+{
+  "name": "services",
+  "version": "1.0.0",
+  "description": "Twitter app with services",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./node_modules/.bin/jest"
+  },
+  "author": "MarcosLopezM",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
