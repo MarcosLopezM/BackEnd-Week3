@@ -13,6 +13,13 @@ describe("Tests for UserView", () => {
         const payload = {username: null, name: 12, id: "id"};
         const result = UserView.createUser(payload);
 
-        expect(result.error).toMatch(/necesitan tener un valor válido/)
+        expect(result.error).toMatch(/Necesitan tener un valor válido/)
     });
+
+    test("Return an error object when trying to create a new user with payload with missing properties", () => {
+        const payload = {username: "username"};
+        const result = UserView.createUser(payload);
+
+        expect(result.error).toMatch(/Necesitan tener un valor válido/)
+    })
 })
