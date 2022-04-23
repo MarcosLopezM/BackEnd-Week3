@@ -8,7 +8,7 @@ app.use(express.json()); // Indicamos que usaremos JSON
 // Puerto en el que vamos a ver nuestra app: localhost:3000
 const port = 3000;
 
-// HTPP Methods
+// HTTP Methods
 app.get('/v1/explorers', (req, res) => {
     console.log(`API Explorers GET ALL requests ${new Date()}`);
     const explorer1 = {id: 1, name: "Marcos1"}
@@ -19,11 +19,19 @@ app.get('/v1/explorers', (req, res) => {
     res.status(200).json(explorers)
 })
 
+// GET: Crea un endpoint que regresa un explorer por su id
 app.get('/v1/explorers/:id', (req, res) => {
     console.log(`API Explorers GET request ${new Date()}`);
     console.log(`Getting explorer with id: ${req.params.id}`);
     const explorer = {id: 1, name: "Marcos"}
     res.status(200).json(explorer)
+})
+
+// POST: Crea un endpoint que se encargue de crear un explorer
+app.post('/v1/explorers', (req, res) => {
+    console.log(`API Explorers POST request ${new Date()}`);
+    const requestBody = req.body; // Parámetros de un cliente
+    res.status(201).json({message: 'Created'})
 })
 
 // Con esto inicializamos la app
