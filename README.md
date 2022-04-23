@@ -10,6 +10,6 @@ Para este proyecto debemos descargar el archivo `LaunchX.postman_collection.json
 
 Primero debemos importar el archivo a la aplicación. Una vez que este se ha importado, debemos elegir el primer request `GET` y dar click en el botón `Send`. En la pantalla de respuesta de **Postman** debemos ver lo siguiente:
 
-<!-- Insertar imagen -->
+![Error image](https://user-images.githubusercontent.com/57697020/164945671-5d096b2b-06c7-4e07-b93a-162e47436995.png)
 
 Para solucionar este error, se debe inicializar la aplicación con el comando `node app.js`. Y luego de ejecutar el comando, debemos verificar que la aplicación se inicializó correctamente.
